@@ -9,8 +9,8 @@ import { todoservice } from './todo.service';
     <h1>Todo</h1>
     <p></p>
     <ul>
-      <li *ngFor= "let w of mywork">
-      {{w.id}} &nbsp; {{ w.name }}
+      <li *ngFor= "let work of mywork">
+      {{work.id}} &nbsp; {{ work.name }}
       </li>
       </ul>
     `,
