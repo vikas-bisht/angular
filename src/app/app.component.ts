@@ -1,30 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-
-import { todo } from './todo'
-import { todoservice } from './todo.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector:'todo',
-  template : `
-    <h1>Todo</h1>
-    <p></p>
-    <ul>
-      <li *ngFor= "let work of mywork">
-      {{work.id}} &nbsp; {{ work.name }}
-      </li>
-      </ul>
-    `,
-    providers: [todoservice]
+  templateUrl:'app.component.html'
 })
 
-export class AppComponent implements OnInit{
-  mywork : todo[];
-  constructor(private todoservice: todoservice){}
+export class AppComponent implements OnInit {
+  constructor(private router: Router){}
+  ngOnInit(){
 
-  getwork(): void{
-    this.todoservice.getwork().then(mywork=>this.mywork=mywork);
-  }
-  ngOnInit():void{
-    this.getwork();
   }
 }

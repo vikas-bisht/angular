@@ -1,0 +1,8 @@
+<h1>Todo</h1>
+<p></p>
+<ul>
+  <li *ngFor= "let todo of todos">
+    <a routerLink="/tododetail">{{ todo.name }}</a>
+    <router-outlet></router-outlet>
+  </li>
+</ul>

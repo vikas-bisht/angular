@@ -1,6 +1,6 @@
-import { todo } from './todo';
+import { Todo } from './todo';
 
-export const mywork : todo[]=[
+export const Todos : Todo[]=[
   { id: 1, name: 'sleep' },
   { id: 2, name: 'rest' },
   { id: 3, name: 'work' },

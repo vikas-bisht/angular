@@ -1,5 +1,4 @@
-export class todo{
-  constructor (
-    public id: number,
-    public name: string) {}
+export class Todo{
+     id: number;
+     name: string;
 }
