@@ -1,8 +1,8 @@
 <h1>Todo</h1>
 <p></p>
 <ul>
-  <li *ngFor= "let todo of todos">
-    {{todo.id}} &nbsp; {{ todo.name }}&nbsp; &nbsp; <button (click)="edit()">edit</button>
+  <li *ngFor= "let todo of todos" (click)="onSelect(todo)">
+  <span class="badge">  {{todo.id}} </span> &nbsp; {{ todo.name }}&nbsp; &nbsp; <a routerLink="edit/:id" routerLink="active">edit</a>
   </li>
 </ul>
 <router-outlet></router-outlet>

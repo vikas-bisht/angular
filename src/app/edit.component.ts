@@ -1,9 +1,14 @@
-import { Component,Input } from '@angular/core';
-import { Todo } from './todo'
+import { Component, Input } from '@angular/core';
+import { Routes } from '@angular/router';
+
+import { Todo } from './todo';
+import { TodoService } from './todo.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector:'edit',
-  templateUrl:'./edit.component.html',
+  selector:'',
+  templateUrl:'edit.component.html',
+  providers:[TodoService]
 
 })
 

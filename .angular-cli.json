@@ -1,11 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-<<<<<<< HEAD
     "name": "helloangular"
-=======
-    "name": "first"
->>>>>>> 8921b66414c827a6d507459bbe1075b44504269e
   },
   "apps": [
     {

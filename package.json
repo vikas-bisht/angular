@@ -1,9 +1,6 @@
 {
-<<<<<<< HEAD
   "name": "helloangular",
-=======
-  "name": "first",
->>>>>>> 8921b66414c827a6d507459bbe1075b44504269e
+
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
